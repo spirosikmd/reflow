@@ -1,4 +1,5 @@
 import React, { PureComponent } from 'react';
+import { Popup } from 'semantic-ui-react';
 
 const style = {
   connector: {
@@ -18,6 +19,7 @@ const timelines = {
   release: 200,
   hotfix: 250,
   master: 300,
+  top: 30,
 };
 
 class Flow extends PureComponent {
@@ -59,37 +61,67 @@ class Flow extends PureComponent {
       },
       featureOne: {
         featureOne: this.connectFeatureOneToFeatureOne.bind(this),
-        develop: this.connectFeatureOneToDevelop.bind(this)
-      }
+        develop: this.connectFeatureOneToDevelop.bind(this),
+      },
     };
   }
 
-  renderUpdate(cx, cy, fill) {
+  renderUpdate(cx, cy, fill, popup = false, content = '') {
+    if (popup) {
+      return (
+        <Popup
+          trigger={
+            <circle
+              cx={cx}
+              cy={cy}
+              r="10"
+              stroke="black"
+              strokeWidth="2"
+              fill={fill}
+            />
+          }
+          content={content}
+          position="bottom center"
+        />
+      );
+    }
     return <circle cx={cx} cy={cy} r="10" stroke="black" fill={fill} />;
   }
 
-  renderDevelopUpdate(cy) {
-    return this.renderUpdate(timelines.develop, cy, '#FEE148');
+  renderDevelopUpdate(cy, popup, content) {
+    return this.renderUpdate(timelines.develop, cy, '#FEE148', popup, content);
   }
 
-  renderMasterUpdate(cy) {
-    return this.renderUpdate(timelines.master, cy, '#39E4F7');
+  renderMasterUpdate(cy, popup, content) {
+    return this.renderUpdate(timelines.master, cy, '#39E4F7', popup, content);
   }
 
-  renderHotfixUpdate(cy) {
-    return this.renderUpdate(timelines.hotfix, cy, '#FB5B68');
+  renderHotfixUpdate(cy, popup, content) {
+    return this.renderUpdate(timelines.hotfix, cy, '#FB5B68', popup, content);
   }
 
-  renderReleaseUpdate(cy) {
-    return this.renderUpdate(timelines.release, cy, '#57C132');
+  renderReleaseUpdate(cy, popup, content) {
+    return this.renderUpdate(timelines.release, cy, '#57C132', popup, content);
   }
 
-  renderFeatureOneUpdate(cy) {
-    return this.renderUpdate(timelines.featureOne, cy, '#FC73BF');
+  renderFeatureOneUpdate(cy, popup, content) {
+    return this.renderUpdate(
+      timelines.featureOne,
+      cy,
+      '#FC73BF',
+      popup,
+      content
+    );
   }
 
-  renderFeatureTwoUpdate(cy) {
-    return this.renderUpdate(timelines.featureTwo, cy, '#FC73BF');
+  renderFeatureTwoUpdate(cy, popup, content) {
+    return this.renderUpdate(
+      timelines.featureTwo,
+      cy,
+      '#FC73BF',
+      popup,
+      content
+    );
   }
 
   renderConnector(x1, y1, x2, y2) {
@@ -197,7 +229,7 @@ class Flow extends PureComponent {
       const connectors = update.connectors;
       let connectorsToRender = [];
       if (connectors) {
-        connectorsToRender = update.connectors.map(connector => {
+        connectorsToRender = connectors.map(connector => {
           const connectorMethod = this.renderConnectorMethods[update.type][
             connector.type
           ];
@@ -205,7 +237,9 @@ class Flow extends PureComponent {
         });
       }
       const updateMethod = this.renderUpdateMethods[update.type];
-      return connectorsToRender.concat(updateMethod(update.y));
+      return connectorsToRender.concat(
+        updateMethod(update.y, update.popup, update.content)
+      );
     });
   }
 
@@ -214,7 +248,7 @@ class Flow extends PureComponent {
 
     return (
       <div>
-        <svg width="350" height="650" viewBox="0 0 350 650">
+        <svg width="100%" height="700" viewBox="0 0 400 700">
           <text x="125" y="18">
             develop
           </text>
@@ -222,14 +256,14 @@ class Flow extends PureComponent {
             master
           </text>
 
-          {this.renderTimeline(timelines.featureOne, 20)}
-          {this.renderTimeline(timelines.featureTwo, 20)}
-          {this.renderTimeline(timelines.develop, 20)}
-          {this.renderTimeline(timelines.release, 20)}
-          {this.renderTimeline(timelines.hotfix, 20)}
-          {this.renderTimeline(timelines.master, 20)}
+          {this.renderTimeline(timelines.featureOne, timelines.top)}
+          {this.renderTimeline(timelines.featureTwo, timelines.top)}
+          {this.renderTimeline(timelines.develop, timelines.top)}
+          {this.renderTimeline(timelines.release, timelines.top)}
+          {this.renderTimeline(timelines.hotfix, timelines.top)}
+          {this.renderTimeline(timelines.master, timelines.top)}
 
-          {this.renderUpdates(updates)}
+          {updates && this.renderUpdates(updates)}
         </svg>
       </div>
     );

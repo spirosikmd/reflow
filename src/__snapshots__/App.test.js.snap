@@ -1,0 +1,117 @@
+exports[`test App renders 1`] = `
+<div>
+  <div
+    className="ui grid">
+    <div
+      className="row">
+      <div
+        className="four wide column">
+        <button
+          className="ui icon button"
+          onClick={[Function]}
+          tabIndex={undefined}>
+          <i
+            aria-hidden="true"
+            className="backward icon" />
+           
+        </button>
+        <button
+          className="ui icon button"
+          onClick={[Function]}
+          tabIndex={undefined}>
+          <i
+            aria-hidden="true"
+            className="forward icon" />
+           
+        </button>
+      </div>
+      <div
+        className="center aligned twelve wide column">
+        <div>
+          <svg
+            height="700"
+            viewBox="0 0 400 700"
+            width="100%">
+            <text
+              x="125"
+              y="18">
+              develop
+            </text>
+            <text
+              x="275"
+              y="18">
+              master
+            </text>
+            <line
+              style={
+                Object {
+                  "stroke": "rgb(208, 208, 208)",
+                  "strokeWidth": 1,
+                }
+              }
+              x1={50}
+              x2={50}
+              y1={30}
+              y2={680} />
+            <line
+              style={
+                Object {
+                  "stroke": "rgb(208, 208, 208)",
+                  "strokeWidth": 1,
+                }
+              }
+              x1={100}
+              x2={100}
+              y1={30}
+              y2={680} />
+            <line
+              style={
+                Object {
+                  "stroke": "rgb(208, 208, 208)",
+                  "strokeWidth": 1,
+                }
+              }
+              x1={150}
+              x2={150}
+              y1={30}
+              y2={680} />
+            <line
+              style={
+                Object {
+                  "stroke": "rgb(208, 208, 208)",
+                  "strokeWidth": 1,
+                }
+              }
+              x1={200}
+              x2={200}
+              y1={30}
+              y2={680} />
+            <line
+              style={
+                Object {
+                  "stroke": "rgb(208, 208, 208)",
+                  "strokeWidth": 1,
+                }
+              }
+              x1={250}
+              x2={250}
+              y1={30}
+              y2={680} />
+            <line
+              style={
+                Object {
+                  "stroke": "rgb(208, 208, 208)",
+                  "strokeWidth": 1,
+                }
+              }
+              x1={300}
+              x2={300}
+              y1={30}
+              y2={680} />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

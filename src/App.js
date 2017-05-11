@@ -1,318 +1,67 @@
 import React, { PureComponent } from 'react';
 import Flow from './Flow';
+import updates from './updates';
+import { Button, Grid } from 'semantic-ui-react';
 
 class App extends PureComponent {
   constructor(props) {
     super(props);
 
     this.state = {
-      updates: [
-        {
-          type: 'master',
-          y: 50,
-          connectors: [
-            {
-              type: 'develop',
-              y: 100,
-            },
-            {
-              type: 'master',
-              y: 220,
-            },
-          ],
-        },
-        {
-          type: 'develop',
-          y: 100,
-          connectors: [
-            {
-              type: 'develop',
-              y: 150,
-            },
-          ],
-        },
-        {
-          type: 'develop',
-          y: 150,
-          connectors: [
-            {
-              type: 'develop',
-              y: 200,
-            },
-            {
-              type: 'featureTwo',
-              y: 190,
-            },
-            {
-              type: 'featureOne',
-              y: 180,
-            },
-          ],
-        },
-        {
-          type: 'featureOne',
-          y: 180,
-          connectors: [
-            {
-              type: 'featureOne',
-              y: 240,
-            },
-          ],
-        },
-        {
-          type: 'featureTwo',
-          y: 190,
-          connectors: [
-            {
-              type: 'featureTwo',
-              y: 220,
-            },
-          ],
-        },
-        {
-          type: 'hotfix',
-          y: 170,
-          connectors: [
-            {
-              type: 'develop',
-              y: 200,
-            },
-            {
-              type: 'master',
-              y: 220,
-            },
-          ],
-        },
-        {
-          type: 'develop',
-          y: 200,
-          connectors: [
-            {
-              type: 'develop',
-              y: 250,
-            },
-          ],
-        },
-        {
-          type: 'featureTwo',
-          y: 220,
-          connectors: [
-            {
-              type: 'develop',
-              y: 250,
-            },
-          ],
-        },
-        {
-          type: 'master',
-          y: 220,
-          connectors: [
-            {
-              type: 'master',
-              y: 470,
-            },
-          ],
-        },
-        {
-          type: 'featureOne',
-          y: 240,
-          connectors: [
-            {
-              type: 'featureOne',
-              y: 370,
-            },
-          ],
-        },
-        {
-          type: 'develop',
-          y: 250,
-          connectors: [
-            {
-              type: 'release',
-              y: 290,
-            },
-            {
-              type: 'develop',
-              y: 370,
-            },
-          ],
-        },
-        {
-          type: 'release',
-          y: 290,
-          connectors: [
-            {
-              type: 'release',
-              y: 340,
-            },
-          ],
-        },
-        {
-          type: 'release',
-          y: 340,
-          connectors: [
-            {
-              type: 'develop',
-              y: 370,
-            },
-            {
-              type: 'release',
-              y: 410,
-            },
-          ],
-        },
-        {
-          type: 'featureOne',
-          y: 370,
-          connectors: [
-            {
-              type: 'featureOne',
-              y: 520,
-            },
-          ],
-        },
-        {
-          type: 'develop',
-          y: 370,
-          connectors: [
-            {
-              type: 'develop',
-              y: 500,
-            },
-            {
-              type: 'featureTwo',
-              y: 430,
-            },
-          ],
-        },
-        {
-          type: 'release',
-          y: 410,
-          connectors: [
-            {
-              type: 'release',
-              y: 450,
-            },
-          ],
-        },
-        {
-          type: 'featureTwo',
-          y: 430,
-          connectors: [
-            {
-              type: 'featureTwo',
-              y: 480,
-            },
-          ],
-        },
-        {
-          type: 'release',
-          y: 450,
-          connectors: [
-            {
-              type: 'master',
-              y: 470,
-            },
-            {
-              type: 'develop',
-              y: 500,
-            },
-          ],
-        },
-        {
-          type: 'master',
-          y: 470,
-          connectors: [
-            {
-              type: 'master',
-              y: 620,
-            },
-          ],
-        },
-        {
-          type: 'featureTwo',
-          y: 480,
-          connectors: [
-            {
-              type: 'featureTwo',
-              y: 520,
-            },
-          ],
-        },
-        {
-          type: 'develop',
-          y: 500,
-          connectors: [
-            {
-              type: 'develop',
-              y: 550,
-            },
-          ],
-        },
-        {
-          type: 'featureTwo',
-          y: 520,
-          connectors: [
-            {
-              type: 'develop',
-              y: 550,
-            },
-          ],
-        },
-        {
-          type: 'featureOne',
-          y: 530,
-          connectors: [
-            {
-              type: 'develop',
-              y: 550,
-            },
-          ],
-        },
-        {
-          type: 'develop',
-          y: 550,
-          connectors: [
-            {
-              type: 'develop',
-              y: 600,
-            },
-            {
-              type: 'release',
-              y: 570,
-            },
-          ],
-        },
-        {
-          type: 'release',
-          y: 570,
-          connectors: [
-            {
-              type: 'develop',
-              y: 600,
-            },
-            {
-              type: 'master',
-              y: 620,
-            },
-          ],
-        },
-        {
-          type: 'develop',
-          y: 600,
-        },
-        {
-          type: 'master',
-          y: 620,
-        },
-      ],
+      updates: [],
+      step: 0,
     };
+
+    this.handleForwardClick = this.handleForwardClick.bind(this);
+    this.handleBackwardClick = this.handleBackwardClick.bind(this);
+  }
+
+  isTheEnd(state, updates) {
+    return state.step === updates.length;
+  }
+
+  isTheStart(state) {
+    return state.step === 0;
+  }
+
+  handleForwardClick(state, updates) {
+    if (this.isTheEnd(state, updates)) {
+      return;
+    }
+    const newUpdates = [...state.updates, updates[state.step]];
+    const step = state.step + 1;
+    this.setState({ updates: newUpdates, step });
+  }
+
+  handleBackwardClick(state) {
+    if (this.isTheStart(state)) {
+      return;
+    }
+    const newUpdates = state.updates.slice(0, state.updates.length - 1);
+    const step = state.step - 1;
+    this.setState({ updates: newUpdates, step });
   }
 
   render() {
     return (
       <div>
-        <Flow updates={this.state.updates} />
+        <Grid>
+          <Grid.Row>
+            <Grid.Column width={4}>
+              <Button
+                icon="backward"
+                onClick={() => this.handleBackwardClick(this.state)}
+              />
+              <Button
+                icon="forward"
+                onClick={() => this.handleForwardClick(this.state, updates)}
+              />
+            </Grid.Column>
+            <Grid.Column width={12} textAlign="center">
+              <Flow updates={this.state.updates} />
+            </Grid.Column>
+          </Grid.Row>
+        </Grid>
       </div>
     );
   }
