@@ -7,6 +7,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Contribute
 
+### `npm install` or `yarn`
+
+Installs all required dependencies.
+
 ### `npm start` or `yarn start`
 
 Runs the app in development mode.<br>
