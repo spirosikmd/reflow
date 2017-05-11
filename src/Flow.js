@@ -4,12 +4,12 @@ import { Popup } from 'semantic-ui-react';
 const style = {
   connector: {
     stroke: 'rgb(0, 0, 0)',
-    strokeWidth: 1
+    strokeWidth: 1,
   },
   timeline: {
     stroke: 'rgb(208, 208, 208)',
-    strokeWidth: 1
-  }
+    strokeWidth: 1,
+  },
 };
 
 const timelines = {
@@ -19,7 +19,7 @@ const timelines = {
   release: 230,
   hotfix: 290,
   master: 350,
-  top: 30
+  top: 30,
 };
 
 class Flow extends PureComponent {
@@ -32,37 +32,37 @@ class Flow extends PureComponent {
       hotfix: this.renderHotfixUpdate.bind(this),
       release: this.renderReleaseUpdate.bind(this),
       featureOne: this.renderFeatureOneUpdate.bind(this),
-      featureTwo: this.renderFeatureTwoUpdate.bind(this)
+      featureTwo: this.renderFeatureTwoUpdate.bind(this),
     };
 
     this.renderConnectorMethods = {
       master: {
         master: this.connectMasterToMaster.bind(this),
-        develop: this.connectMasterToDevelop.bind(this)
+        develop: this.connectMasterToDevelop.bind(this),
       },
       develop: {
         develop: this.connectDevelopToDevelop.bind(this),
         release: this.connectDevelopToRelease.bind(this),
         featureOne: this.connectDevelopToFeatureOne.bind(this),
-        featureTwo: this.connectDevelopToFeatureTwo.bind(this)
+        featureTwo: this.connectDevelopToFeatureTwo.bind(this),
       },
       hotfix: {
         develop: this.connectHotfixToDevelop.bind(this),
-        master: this.connectHotfixToMaster.bind(this)
+        master: this.connectHotfixToMaster.bind(this),
       },
       release: {
         release: this.connectRelaseToRelease.bind(this),
         develop: this.connectReleaseToDevelop.bind(this),
-        master: this.connectReleaseToMaster.bind(this)
+        master: this.connectReleaseToMaster.bind(this),
       },
       featureTwo: {
         featureTwo: this.connectFeatureTwoToFeatureTwo.bind(this),
-        develop: this.connectFeatureTwoToDevelop.bind(this)
+        develop: this.connectFeatureTwoToDevelop.bind(this),
       },
       featureOne: {
         featureOne: this.connectFeatureOneToFeatureOne.bind(this),
-        develop: this.connectFeatureOneToDevelop.bind(this)
-      }
+        develop: this.connectFeatureOneToDevelop.bind(this),
+      },
     };
   }
 

@@ -4,17 +4,16 @@ export default [
     y: 50,
     popup: true,
     content: 'Tag 0.1',
-    icon: 'rocket',
     connectors: [
       {
         type: 'develop',
-        y: 100
+        y: 100,
       },
       {
         type: 'master',
-        y: 220
-      }
-    ]
+        y: 220,
+      },
+    ],
   },
   {
     type: 'develop',
@@ -22,9 +21,9 @@ export default [
     connectors: [
       {
         type: 'develop',
-        y: 150
-      }
-    ]
+        y: 150,
+      },
+    ],
   },
   {
     type: 'develop',
@@ -32,17 +31,17 @@ export default [
     connectors: [
       {
         type: 'develop',
-        y: 200
+        y: 200,
       },
       {
         type: 'featureTwo',
-        y: 190
+        y: 190,
       },
       {
         type: 'featureOne',
-        y: 180
-      }
-    ]
+        y: 180,
+      },
+    ],
   },
   {
     type: 'featureOne',
@@ -50,9 +49,9 @@ export default [
     connectors: [
       {
         type: 'featureOne',
-        y: 240
-      }
-    ]
+        y: 240,
+      },
+    ],
   },
   {
     type: 'featureTwo',
@@ -60,39 +59,37 @@ export default [
     connectors: [
       {
         type: 'featureTwo',
-        y: 220
-      }
-    ]
+        y: 220,
+      },
+    ],
   },
   {
     type: 'hotfix',
     y: 170,
     popup: true,
     content: 'Severe bug fixed for production: hotfix 0.2',
-    icon: 'bug',
     connectors: [
       {
         type: 'develop',
-        y: 200
+        y: 200,
       },
       {
         type: 'master',
-        y: 220
-      }
-    ]
+        y: 220,
+      },
+    ],
   },
   {
     type: 'develop',
     y: 200,
     popup: true,
     content: 'Incorporate bugfix in develop',
-    icon: 'code',
     connectors: [
       {
         type: 'develop',
-        y: 250
-      }
-    ]
+        y: 250,
+      },
+    ],
   },
   {
     type: 'featureTwo',
@@ -100,22 +97,21 @@ export default [
     connectors: [
       {
         type: 'develop',
-        y: 250
-      }
-    ]
+        y: 250,
+      },
+    ],
   },
   {
     type: 'master',
     y: 220,
     popup: true,
     content: 'Tag 0.2',
-    icon: 'rocket',
     connectors: [
       {
         type: 'master',
-        y: 470
-      }
-    ]
+        y: 470,
+      },
+    ],
   },
   {
     type: 'featureOne',
@@ -123,9 +119,9 @@ export default [
     connectors: [
       {
         type: 'featureOne',
-        y: 370
-      }
-    ]
+        y: 370,
+      },
+    ],
   },
   {
     type: 'develop',
@@ -133,13 +129,13 @@ export default [
     connectors: [
       {
         type: 'release',
-        y: 290
+        y: 290,
       },
       {
         type: 'develop',
-        y: 370
-      }
-    ]
+        y: 370,
+      },
+    ],
   },
   {
     type: 'release',
@@ -147,9 +143,9 @@ export default [
     connectors: [
       {
         type: 'release',
-        y: 340
-      }
-    ]
+        y: 340,
+      },
+    ],
   },
   {
     type: 'release',
@@ -157,13 +153,13 @@ export default [
     connectors: [
       {
         type: 'develop',
-        y: 370
+        y: 370,
       },
       {
         type: 'release',
-        y: 410
-      }
-    ]
+        y: 410,
+      },
+    ],
   },
   {
     type: 'featureOne',
@@ -171,9 +167,9 @@ export default [
     connectors: [
       {
         type: 'featureOne',
-        y: 520
-      }
-    ]
+        y: 520,
+      },
+    ],
   },
   {
     type: 'develop',
@@ -181,13 +177,13 @@ export default [
     connectors: [
       {
         type: 'develop',
-        y: 500
+        y: 500,
       },
       {
         type: 'featureTwo',
-        y: 430
-      }
-    ]
+        y: 430,
+      },
+    ],
   },
   {
     type: 'release',
@@ -195,9 +191,9 @@ export default [
     connectors: [
       {
         type: 'release',
-        y: 450
-      }
-    ]
+        y: 450,
+      },
+    ],
   },
   {
     type: 'featureTwo',
@@ -205,9 +201,9 @@ export default [
     connectors: [
       {
         type: 'featureTwo',
-        y: 480
-      }
-    ]
+        y: 480,
+      },
+    ],
   },
   {
     type: 'release',
@@ -215,26 +211,25 @@ export default [
     connectors: [
       {
         type: 'master',
-        y: 470
+        y: 470,
       },
       {
         type: 'develop',
-        y: 500
-      }
-    ]
+        y: 500,
+      },
+    ],
   },
   {
     type: 'master',
     y: 470,
     popup: true,
     content: 'Tag 1.0',
-    icon: 'rocket',
     connectors: [
       {
         type: 'master',
-        y: 620
-      }
-    ]
+        y: 620,
+      },
+    ],
   },
   {
     type: 'featureTwo',
@@ -242,9 +237,9 @@ export default [
     connectors: [
       {
         type: 'featureTwo',
-        y: 520
-      }
-    ]
+        y: 520,
+      },
+    ],
   },
   {
     type: 'develop',
@@ -252,9 +247,9 @@ export default [
     connectors: [
       {
         type: 'develop',
-        y: 550
-      }
-    ]
+        y: 550,
+      },
+    ],
   },
   {
     type: 'featureTwo',
@@ -262,9 +257,9 @@ export default [
     connectors: [
       {
         type: 'develop',
-        y: 550
-      }
-    ]
+        y: 550,
+      },
+    ],
   },
   {
     type: 'featureOne',
@@ -272,9 +267,9 @@ export default [
     connectors: [
       {
         type: 'develop',
-        y: 550
-      }
-    ]
+        y: 550,
+      },
+    ],
   },
   {
     type: 'develop',
@@ -282,13 +277,13 @@ export default [
     connectors: [
       {
         type: 'develop',
-        y: 600
+        y: 600,
       },
       {
         type: 'release',
-        y: 570
-      }
-    ]
+        y: 570,
+      },
+    ],
   },
   {
     type: 'release',
@@ -296,20 +291,20 @@ export default [
     connectors: [
       {
         type: 'develop',
-        y: 600
+        y: 600,
       },
       {
         type: 'master',
-        y: 620
-      }
-    ]
+        y: 620,
+      },
+    ],
   },
   {
     type: 'develop',
-    y: 600
+    y: 600,
   },
   {
     type: 'master',
-    y: 620
-  }
+    y: 620,
+  },
 ];

@@ -32,7 +32,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "fmt": "prettier --single-quote --write \"src/**/*.js\"",
+    "fmt": "prettier --single-quote --trailing-comma es5 --write \"src/**/*.js\"",
     "precommit": "lint-staged",
     "add-contributor": "all-contributors add",
     "generate-contributors": "all-contributors generate",

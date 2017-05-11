@@ -9,7 +9,7 @@ class App extends PureComponent {
 
     this.state = {
       updates: [],
-      step: 0
+      step: 0,
     };
   }
 
@@ -42,8 +42,31 @@ class App extends PureComponent {
   handlerResetClick() {
     this.setState({
       updates: [],
-      step: 0
+      step: 0,
     });
+  }
+
+  getUpdateIcon(update) {
+    switch (update.type) {
+      case 'hotfix':
+        return 'bug';
+      case 'master':
+        return 'rocket';
+      case 'develop':
+        return 'code';
+      default:
+        return;
+    }
+  }
+
+  renderListUpdate(update) {
+    const iconName = this.getUpdateIcon(update);
+    return (
+      <List.Item key={update.y}>
+        <List.Icon name={iconName} verticalAlign="middle" />
+        <List.Content>{update.content}</List.Content>
+      </List.Item>
+    );
   }
 
   render() {
@@ -68,13 +91,7 @@ class App extends PureComponent {
                 {this.state.updates &&
                   this.state.updates
                     .filter(update => update.popup)
-                    .map(update => (
-                      <List.Item
-                        key={update.y}
-                        icon={update.icon}
-                        content={update.content}
-                      />
-                    ))}
+                    .map(update => this.renderListUpdate(update))}
               </List>
             </Grid.Column>
             <Grid.Column width={11} textAlign="center">

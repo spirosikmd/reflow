@@ -43,7 +43,7 @@ it('App handleForwardClick calls setState with new updates and step', () => {
   app.handleForwardClick({ step: 1, updates: [{}] }, [{}, {}]);
   expect(app.setState).toHaveBeenCalledWith({
     updates: [{}, {}],
-    step: 2
+    step: 2,
   });
 });
 
@@ -62,7 +62,7 @@ it('App handleBackwardClick calls setState with new updates and step', () => {
   app.handleBackwardClick({ step: 2, updates: [{}, {}] });
   expect(app.setState).toHaveBeenCalledWith({
     updates: [{}],
-    step: 1
+    step: 1,
   });
 });
 
@@ -71,4 +71,11 @@ it('App handlerResetClick resets updates and step', () => {
   app.setState = jest.fn();
   app.handlerResetClick();
   expect(app.setState).toHaveBeenCalledWith({ step: 0, updates: [] });
+});
+
+it('App getUpdateIcon returns correct icon given on update type', () => {
+  const app = new App();
+  expect(app.getUpdateIcon({ type: 'hotfix' })).toBe('bug');
+  expect(app.getUpdateIcon({ type: 'master' })).toBe('rocket');
+  expect(app.getUpdateIcon({ type: 'develop' })).toBe('code');
 });
