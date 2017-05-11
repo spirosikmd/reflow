@@ -1,6 +1,6 @@
 # reflow
 
-Interactive gitflow diagram 
+Interactive gitflow diagram based on Vincent Driessen's [branching model](http://nvie.com/git-model "original blog post").
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
