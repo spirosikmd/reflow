@@ -78,6 +78,7 @@ class Flow extends PureComponent {
               stroke="black"
               strokeWidth="2"
               fill={fill}
+              cursor="help"
             />
           }
           content={content}
