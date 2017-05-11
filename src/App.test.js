@@ -40,7 +40,7 @@ it('App handleForwardClick calls setState with new updates and step', () => {
   const app = new App();
   app.setState = jest.fn();
   app.isTheEnd = jest.fn().mockReturnValue(false);
-  app.handleForwardClick({step: 1, updates: [{}]}, [{}, {}]);
+  app.handleForwardClick({ step: 1, updates: [{}] }, [{}, {}]);
   expect(app.setState).toHaveBeenCalledWith({
     updates: [{}, {}],
     step: 2
@@ -59,7 +59,7 @@ it('App handleBackwardClick calls setState with new updates and step', () => {
   const app = new App();
   app.setState = jest.fn();
   app.isTheStart = jest.fn().mockReturnValue(false);
-  app.handleBackwardClick({step: 2, updates: [{}, {}]});
+  app.handleBackwardClick({ step: 2, updates: [{}, {}] });
   expect(app.setState).toHaveBeenCalledWith({
     updates: [{}],
     step: 1

@@ -5,10 +5,7 @@ import './index.css';
 
 const root = document.getElementById('root');
 
-ReactDOM.render(
-  <App />,
-  root
-);
+ReactDOM.render(<App />, root);
 
 if (module.hot) {
   module.hot.accept('./App', () => {

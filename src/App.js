@@ -9,7 +9,7 @@ class App extends PureComponent {
 
     this.state = {
       updates: [],
-      step: 0,
+      step: 0
     };
 
     this.handleForwardClick = this.handleForwardClick.bind(this);
