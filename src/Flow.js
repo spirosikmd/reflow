@@ -14,11 +14,11 @@ const style = {
 
 const timelines = {
   featureOne: 50,
-  featureTwo: 100,
-  develop: 150,
-  release: 200,
-  hotfix: 250,
-  master: 300,
+  featureTwo: 110,
+  develop: 170,
+  release: 230,
+  hotfix: 290,
+  master: 350,
   top: 30
 };
 
@@ -249,10 +249,23 @@ class Flow extends PureComponent {
     return (
       <div>
         <svg width="100%" height="700" viewBox="0 0 400 700">
-          <text x="125" y="18">
+          <text x={timelines.featureOne + 10} y="20">
+            feature
+          </text>
+          <text
+            x={timelines.develop - 25}
+            y="20"
+            style={{ fontWeight: 'bold' }}
+          >
             develop
           </text>
-          <text x="275" y="18">
+          <text x={timelines.release - 20} y="20">
+            release
+          </text>
+          <text x={timelines.hotfix - 25} y="20">
+            hotfixes
+          </text>
+          <text x={timelines.master - 20} y="20" style={{ fontWeight: 'bold' }}>
             master
           </text>
 
