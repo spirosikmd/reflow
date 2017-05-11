@@ -1,4 +1,5 @@
 # reflow
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
 
 Interactive gitflow diagram based on Vincent Driessen's [branching model](http://nvie.com/git-model "original blog post").
 
@@ -30,3 +31,14 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 The build is minified and the filenames include the hashes.<br>
 The app is ready to be deployed!
+
+## Contributors
+
+Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds/all-contributors#emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+| [<img src="https://avatars0.githubusercontent.com/u/1057324?v=3" width="100px;"/><br /><sub>Spyros Ioakeimidis</sub>](http://www.spyros.io)<br />[💻](https://github.com/spirosikmd/reflow/commits?author=spirosikmd "Code") [💬](#question-spirosikmd "Answering Questions") [🐛](https://github.com/spirosikmd/reflow/issues?q=author%3Aspirosikmd "Bug reports") [📖](https://github.com/spirosikmd/reflow/commits?author=spirosikmd "Documentation") [⚠️](https://github.com/spirosikmd/reflow/commits?author=spirosikmd "Tests") |
+| :---: |
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/kentcdodds/all-contributors) specification. Contributions of any kind welcome!

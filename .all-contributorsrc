@@ -1,0 +1,24 @@
+{
+  "projectName": "reflow",
+  "projectOwner": "spirosikmd",
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": true,
+  "contributors": [
+    {
+      "login": "spirosikmd",
+      "name": "Spyros Ioakeimidis",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/1057324?v=3",
+      "profile": "http://www.spyros.io",
+      "contributions": [
+        "code",
+        "question",
+        "bug",
+        "doc",
+        "test"
+      ]
+    }
+  ]
+}
