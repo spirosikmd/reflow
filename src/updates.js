@@ -4,6 +4,7 @@ export default [
     y: 50,
     popup: true,
     content: 'Tag 0.1',
+    icon: 'rocket',
     connectors: [
       {
         type: 'develop',
@@ -68,6 +69,7 @@ export default [
     y: 170,
     popup: true,
     content: 'Severe bug fixed for production: hotfix 0.2',
+    icon: 'bug',
     connectors: [
       {
         type: 'develop',
@@ -84,6 +86,7 @@ export default [
     y: 200,
     popup: true,
     content: 'Incorporate bugfix in develop',
+    icon: 'code',
     connectors: [
       {
         type: 'develop',
@@ -106,6 +109,7 @@ export default [
     y: 220,
     popup: true,
     content: 'Tag 0.2',
+    icon: 'rocket',
     connectors: [
       {
         type: 'master',
@@ -224,6 +228,7 @@ export default [
     y: 470,
     popup: true,
     content: 'Tag 1.0',
+    icon: 'rocket',
     connectors: [
       {
         type: 'master',

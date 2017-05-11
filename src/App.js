@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react';
 import Flow from './Flow';
 import updates from './updates';
-import { Button, Grid } from 'semantic-ui-react';
+import { Button, Grid, List } from 'semantic-ui-react';
 
 class App extends PureComponent {
   constructor(props) {
@@ -51,7 +51,7 @@ class App extends PureComponent {
       <div>
         <Grid>
           <Grid.Row>
-            <Grid.Column width={4}>
+            <Grid.Column width={5}>
               <Button
                 icon="backward"
                 onClick={() => this.handleBackwardClick(this.state)}
@@ -64,8 +64,20 @@ class App extends PureComponent {
                 onClick={() => this.handlerResetClick(this.state)}
                 content="reset"
               />
+              <List>
+                {this.state.updates &&
+                  this.state.updates
+                    .filter(update => update.popup)
+                    .map(update => (
+                      <List.Item
+                        key={update.y}
+                        icon={update.icon}
+                        content={update.content}
+                      />
+                    ))}
+              </List>
             </Grid.Column>
-            <Grid.Column width={12} textAlign="center">
+            <Grid.Column width={11} textAlign="center">
               <Flow updates={this.state.updates} />
             </Grid.Column>
           </Grid.Row>
