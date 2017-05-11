@@ -65,3 +65,10 @@ it('App handleBackwardClick calls setState with new updates and step', () => {
     step: 1
   });
 });
+
+it('App handlerResetClick resets updates and step', () => {
+  const app = new App();
+  app.setState = jest.fn();
+  app.handlerResetClick();
+  expect(app.setState).toHaveBeenCalledWith({ step: 0, updates: [] });
+});

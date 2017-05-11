@@ -24,6 +24,12 @@ exports[`test App renders 1`] = `
             className="forward icon" />
            
         </button>
+        <button
+          className="ui button"
+          onClick={[Function]}
+          tabIndex={undefined}>
+          reset
+        </button>
       </div>
       <div
         className="center aligned twelve wide column">
@@ -33,13 +39,38 @@ exports[`test App renders 1`] = `
             viewBox="0 0 400 700"
             width="100%">
             <text
-              x="125"
-              y="18">
+              x={60}
+              y="20">
+              feature
+            </text>
+            <text
+              style={
+                Object {
+                  "fontWeight": "bold",
+                }
+              }
+              x={145}
+              y="20">
               develop
             </text>
             <text
-              x="275"
-              y="18">
+              x={210}
+              y="20">
+              release
+            </text>
+            <text
+              x={265}
+              y="20">
+              hotfixes
+            </text>
+            <text
+              style={
+                Object {
+                  "fontWeight": "bold",
+                }
+              }
+              x={330}
+              y="20">
               master
             </text>
             <line
@@ -60,8 +91,8 @@ exports[`test App renders 1`] = `
                   "strokeWidth": 1,
                 }
               }
-              x1={100}
-              x2={100}
+              x1={110}
+              x2={110}
               y1={30}
               y2={680} />
             <line
@@ -71,8 +102,8 @@ exports[`test App renders 1`] = `
                   "strokeWidth": 1,
                 }
               }
-              x1={150}
-              x2={150}
+              x1={170}
+              x2={170}
               y1={30}
               y2={680} />
             <line
@@ -82,8 +113,8 @@ exports[`test App renders 1`] = `
                   "strokeWidth": 1,
                 }
               }
-              x1={200}
-              x2={200}
+              x1={230}
+              x2={230}
               y1={30}
               y2={680} />
             <line
@@ -93,8 +124,8 @@ exports[`test App renders 1`] = `
                   "strokeWidth": 1,
                 }
               }
-              x1={250}
-              x2={250}
+              x1={290}
+              x2={290}
               y1={30}
               y2={680} />
             <line
@@ -104,8 +135,8 @@ exports[`test App renders 1`] = `
                   "strokeWidth": 1,
                 }
               }
-              x1={300}
-              x2={300}
+              x1={350}
+              x2={350}
               y1={30}
               y2={680} />
           </svg>

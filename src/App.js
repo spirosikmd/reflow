@@ -11,9 +11,6 @@ class App extends PureComponent {
       updates: [],
       step: 0
     };
-
-    this.handleForwardClick = this.handleForwardClick.bind(this);
-    this.handleBackwardClick = this.handleBackwardClick.bind(this);
   }
 
   isTheEnd(state, updates) {
@@ -42,6 +39,13 @@ class App extends PureComponent {
     this.setState({ updates: newUpdates, step });
   }
 
+  handlerResetClick() {
+    this.setState({
+      updates: [],
+      step: 0
+    });
+  }
+
   render() {
     return (
       <div>
@@ -55,6 +59,10 @@ class App extends PureComponent {
               <Button
                 icon="forward"
                 onClick={() => this.handleForwardClick(this.state, updates)}
+              />
+              <Button
+                onClick={() => this.handlerResetClick(this.state)}
+                content="reset"
               />
             </Grid.Column>
             <Grid.Column width={12} textAlign="center">
