@@ -54,6 +54,11 @@ class App extends PureComponent {
         return 'rocket';
       case 'develop':
         return 'code';
+      case 'release':
+        return 'truck';
+      case 'featureOne':
+      case 'featureTwo':
+        return 'lab';
       default:
         return;
     }

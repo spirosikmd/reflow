@@ -46,6 +46,8 @@ export default [
   {
     type: 'featureOne',
     y: 180,
+    popup: true,
+    content: 'Major feature for next release',
     connectors: [
       {
         type: 'featureOne',
@@ -56,6 +58,8 @@ export default [
   {
     type: 'featureTwo',
     y: 190,
+    popup: true,
+    content: 'Feature for future release',
     connectors: [
       {
         type: 'featureTwo',
@@ -140,6 +144,8 @@ export default [
   {
     type: 'release',
     y: 290,
+    popup: true,
+    content: 'Start of release branch for 1.0. From this point on next release means the release after 1.0',
     connectors: [
       {
         type: 'release',
@@ -188,6 +194,8 @@ export default [
   {
     type: 'release',
     y: 410,
+    popup: true,
+    content: 'Only bugfixes',
     connectors: [
       {
         type: 'release',
@@ -208,6 +216,8 @@ export default [
   {
     type: 'release',
     y: 450,
+    popup: true,
+    content: 'Bugfixes from release branch may be continuously merged back into develop',
     connectors: [
       {
         type: 'master',
