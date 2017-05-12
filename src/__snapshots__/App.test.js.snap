@@ -41,6 +41,20 @@ exports[`test App renders 1`] = `
             height="700"
             viewBox="0 0 400 700"
             width="100%">
+            <defs>
+              <marker
+                id="arrow"
+                markerHeight="10"
+                markerUnits="strokeWidth"
+                markerWidth="10"
+                orient="auto"
+                refX="18"
+                refY="3">
+                <path
+                  d="M0,0 L0,6 L9,3 z"
+                  fill="#000" />
+              </marker>
+            </defs>
             <text
               x={60}
               y="20">

@@ -173,7 +173,7 @@ export default [
     connectors: [
       {
         type: 'featureOne',
-        y: 520,
+        y: 530,
       },
     ],
   },

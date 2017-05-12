@@ -126,7 +126,16 @@ class Flow extends PureComponent {
   }
 
   renderConnector(x1, y1, x2, y2) {
-    return <line x1={x1} y1={y1} x2={x2} y2={y2} style={style.connector} />;
+    return (
+      <line
+        x1={x1}
+        y1={y1}
+        x2={x2}
+        y2={y2}
+        style={style.connector}
+        markerEnd="url(#arrow)"
+      />
+    );
   }
 
   renderTimeline(x1, y1) {
@@ -250,6 +259,20 @@ class Flow extends PureComponent {
     return (
       <div>
         <svg width="100%" height="700" viewBox="0 0 400 700">
+          <defs>
+            <marker
+              id="arrow"
+              markerWidth="10"
+              markerHeight="10"
+              refX="18"
+              refY="3"
+              orient="auto"
+              markerUnits="strokeWidth"
+            >
+              <path d="M0,0 L0,6 L9,3 z" fill="#000" />
+            </marker>
+          </defs>
+
           <text x={timelines.featureOne + 10} y="20">
             feature
           </text>
