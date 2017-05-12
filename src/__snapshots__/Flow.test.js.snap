@@ -1,0 +1,776 @@
+exports[`test App renders 1`] = `
+<div>
+  <svg
+    height="700"
+    viewBox="0 0 400 700"
+    width="100%">
+    <defs>
+      <marker
+        id="arrow"
+        markerHeight="10"
+        markerUnits="strokeWidth"
+        markerWidth="10"
+        orient="auto"
+        refX="18"
+        refY="3">
+        <path
+          d="M0,0 L0,6 L9,3 z"
+          fill="#000" />
+      </marker>
+    </defs>
+    <text
+      x={60}
+      y="20">
+      feature
+    </text>
+    <text
+      style={
+        Object {
+          "fontWeight": "bold",
+        }
+      }
+      x={145}
+      y="20">
+      develop
+    </text>
+    <text
+      x={210}
+      y="20">
+      release
+    </text>
+    <text
+      x={265}
+      y="20">
+      hotfixes
+    </text>
+    <text
+      style={
+        Object {
+          "fontWeight": "bold",
+        }
+      }
+      x={330}
+      y="20">
+      master
+    </text>
+    <line
+      style={
+        Object {
+          "stroke": "rgb(208, 208, 208)",
+          "strokeWidth": 1,
+        }
+      }
+      x1={50}
+      x2={50}
+      y1={30}
+      y2={680} />
+    <line
+      style={
+        Object {
+          "stroke": "rgb(208, 208, 208)",
+          "strokeWidth": 1,
+        }
+      }
+      x1={110}
+      x2={110}
+      y1={30}
+      y2={680} />
+    <line
+      style={
+        Object {
+          "stroke": "rgb(208, 208, 208)",
+          "strokeWidth": 1,
+        }
+      }
+      x1={170}
+      x2={170}
+      y1={30}
+      y2={680} />
+    <line
+      style={
+        Object {
+          "stroke": "rgb(208, 208, 208)",
+          "strokeWidth": 1,
+        }
+      }
+      x1={230}
+      x2={230}
+      y1={30}
+      y2={680} />
+    <line
+      style={
+        Object {
+          "stroke": "rgb(208, 208, 208)",
+          "strokeWidth": 1,
+        }
+      }
+      x1={290}
+      x2={290}
+      y1={30}
+      y2={680} />
+    <line
+      style={
+        Object {
+          "stroke": "rgb(208, 208, 208)",
+          "strokeWidth": 1,
+        }
+      }
+      x1={350}
+      x2={350}
+      y1={30}
+      y2={680} />
+    <line
+      markerEnd="url(#arrow)"
+      style={
+        Object {
+          "stroke": "rgb(0, 0, 0)",
+          "strokeWidth": 1,
+        }
+      }
+      x1={350}
+      x2={170}
+      y1={50}
+      y2={100} />
+    <line
+      markerEnd="url(#arrow)"
+      style={
+        Object {
+          "stroke": "rgb(0, 0, 0)",
+          "strokeWidth": 1,
+        }
+      }
+      x1={350}
+      x2={350}
+      y1={50}
+      y2={220} />
+    <circle
+      cursor="help"
+      cx={350}
+      cy={50}
+      fill="#39E4F7"
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+      r="10"
+      stroke="black"
+      strokeWidth="2" />
+    <line
+      markerEnd="url(#arrow)"
+      style={
+        Object {
+          "stroke": "rgb(0, 0, 0)",
+          "strokeWidth": 1,
+        }
+      }
+      x1={170}
+      x2={170}
+      y1={100}
+      y2={150} />
+    <circle
+      cx={170}
+      cy={100}
+      fill="#FEE148"
+      r="10"
+      stroke="black" />
+    <line
+      markerEnd="url(#arrow)"
+      style={
+        Object {
+          "stroke": "rgb(0, 0, 0)",
+          "strokeWidth": 1,
+        }
+      }
+      x1={170}
+      x2={170}
+      y1={150}
+      y2={200} />
+    <line
+      markerEnd="url(#arrow)"
+      style={
+        Object {
+          "stroke": "rgb(0, 0, 0)",
+          "strokeWidth": 1,
+        }
+      }
+      x1={170}
+      x2={110}
+      y1={150}
+      y2={190} />
+    <line
+      markerEnd="url(#arrow)"
+      style={
+        Object {
+          "stroke": "rgb(0, 0, 0)",
+          "strokeWidth": 1,
+        }
+      }
+      x1={170}
+      x2={50}
+      y1={150}
+      y2={180} />
+    <circle
+      cx={170}
+      cy={150}
+      fill="#FEE148"
+      r="10"
+      stroke="black" />
+    <line
+      markerEnd="url(#arrow)"
+      style={
+        Object {
+          "stroke": "rgb(0, 0, 0)",
+          "strokeWidth": 1,
+        }
+      }
+      x1={50}
+      x2={50}
+      y1={180}
+      y2={240} />
+    <circle
+      cursor="help"
+      cx={50}
+      cy={180}
+      fill="#FC73BF"
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+      r="10"
+      stroke="black"
+      strokeWidth="2" />
+    <line
+      markerEnd="url(#arrow)"
+      style={
+        Object {
+          "stroke": "rgb(0, 0, 0)",
+          "strokeWidth": 1,
+        }
+      }
+      x1={110}
+      x2={110}
+      y1={190}
+      y2={220} />
+    <circle
+      cursor="help"
+      cx={110}
+      cy={190}
+      fill="#FC73BF"
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+      r="10"
+      stroke="black"
+      strokeWidth="2" />
+    <line
+      markerEnd="url(#arrow)"
+      style={
+        Object {
+          "stroke": "rgb(0, 0, 0)",
+          "strokeWidth": 1,
+        }
+      }
+      x1={290}
+      x2={170}
+      y1={170}
+      y2={200} />
+    <line
+      markerEnd="url(#arrow)"
+      style={
+        Object {
+          "stroke": "rgb(0, 0, 0)",
+          "strokeWidth": 1,
+        }
+      }
+      x1={290}
+      x2={350}
+      y1={170}
+      y2={220} />
+    <circle
+      cursor="help"
+      cx={290}
+      cy={170}
+      fill="#FB5B68"
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+      r="10"
+      stroke="black"
+      strokeWidth="2" />
+    <line
+      markerEnd="url(#arrow)"
+      style={
+        Object {
+          "stroke": "rgb(0, 0, 0)",
+          "strokeWidth": 1,
+        }
+      }
+      x1={170}
+      x2={170}
+      y1={200}
+      y2={250} />
+    <circle
+      cursor="help"
+      cx={170}
+      cy={200}
+      fill="#FEE148"
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+      r="10"
+      stroke="black"
+      strokeWidth="2" />
+    <line
+      markerEnd="url(#arrow)"
+      style={
+        Object {
+          "stroke": "rgb(0, 0, 0)",
+          "strokeWidth": 1,
+        }
+      }
+      x1={110}
+      x2={170}
+      y1={220}
+      y2={250} />
+    <circle
+      cx={110}
+      cy={220}
+      fill="#FC73BF"
+      r="10"
+      stroke="black" />
+    <line
+      markerEnd="url(#arrow)"
+      style={
+        Object {
+          "stroke": "rgb(0, 0, 0)",
+          "strokeWidth": 1,
+        }
+      }
+      x1={350}
+      x2={350}
+      y1={220}
+      y2={470} />
+    <circle
+      cursor="help"
+      cx={350}
+      cy={220}
+      fill="#39E4F7"
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+      r="10"
+      stroke="black"
+      strokeWidth="2" />
+    <line
+      markerEnd="url(#arrow)"
+      style={
+        Object {
+          "stroke": "rgb(0, 0, 0)",
+          "strokeWidth": 1,
+        }
+      }
+      x1={50}
+      x2={50}
+      y1={240}
+      y2={370} />
+    <circle
+      cx={50}
+      cy={240}
+      fill="#FC73BF"
+      r="10"
+      stroke="black" />
+    <line
+      markerEnd="url(#arrow)"
+      style={
+        Object {
+          "stroke": "rgb(0, 0, 0)",
+          "strokeWidth": 1,
+        }
+      }
+      x1={170}
+      x2={230}
+      y1={250}
+      y2={290} />
+    <line
+      markerEnd="url(#arrow)"
+      style={
+        Object {
+          "stroke": "rgb(0, 0, 0)",
+          "strokeWidth": 1,
+        }
+      }
+      x1={170}
+      x2={170}
+      y1={250}
+      y2={370} />
+    <circle
+      cx={170}
+      cy={250}
+      fill="#FEE148"
+      r="10"
+      stroke="black" />
+    <line
+      markerEnd="url(#arrow)"
+      style={
+        Object {
+          "stroke": "rgb(0, 0, 0)",
+          "strokeWidth": 1,
+        }
+      }
+      x1={230}
+      x2={230}
+      y1={290}
+      y2={340} />
+    <circle
+      cursor="help"
+      cx={230}
+      cy={290}
+      fill="#57C132"
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+      r="10"
+      stroke="black"
+      strokeWidth="2" />
+    <line
+      markerEnd="url(#arrow)"
+      style={
+        Object {
+          "stroke": "rgb(0, 0, 0)",
+          "strokeWidth": 1,
+        }
+      }
+      x1={230}
+      x2={170}
+      y1={340}
+      y2={370} />
+    <line
+      markerEnd="url(#arrow)"
+      style={
+        Object {
+          "stroke": "rgb(0, 0, 0)",
+          "strokeWidth": 1,
+        }
+      }
+      x1={230}
+      x2={230}
+      y1={340}
+      y2={410} />
+    <circle
+      cx={230}
+      cy={340}
+      fill="#57C132"
+      r="10"
+      stroke="black" />
+    <line
+      markerEnd="url(#arrow)"
+      style={
+        Object {
+          "stroke": "rgb(0, 0, 0)",
+          "strokeWidth": 1,
+        }
+      }
+      x1={50}
+      x2={50}
+      y1={370}
+      y2={530} />
+    <circle
+      cx={50}
+      cy={370}
+      fill="#FC73BF"
+      r="10"
+      stroke="black" />
+    <line
+      markerEnd="url(#arrow)"
+      style={
+        Object {
+          "stroke": "rgb(0, 0, 0)",
+          "strokeWidth": 1,
+        }
+      }
+      x1={170}
+      x2={170}
+      y1={370}
+      y2={500} />
+    <line
+      markerEnd="url(#arrow)"
+      style={
+        Object {
+          "stroke": "rgb(0, 0, 0)",
+          "strokeWidth": 1,
+        }
+      }
+      x1={170}
+      x2={110}
+      y1={370}
+      y2={430} />
+    <circle
+      cx={170}
+      cy={370}
+      fill="#FEE148"
+      r="10"
+      stroke="black" />
+    <line
+      markerEnd="url(#arrow)"
+      style={
+        Object {
+          "stroke": "rgb(0, 0, 0)",
+          "strokeWidth": 1,
+        }
+      }
+      x1={230}
+      x2={230}
+      y1={410}
+      y2={450} />
+    <circle
+      cursor="help"
+      cx={230}
+      cy={410}
+      fill="#57C132"
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+      r="10"
+      stroke="black"
+      strokeWidth="2" />
+    <line
+      markerEnd="url(#arrow)"
+      style={
+        Object {
+          "stroke": "rgb(0, 0, 0)",
+          "strokeWidth": 1,
+        }
+      }
+      x1={110}
+      x2={110}
+      y1={430}
+      y2={480} />
+    <circle
+      cx={110}
+      cy={430}
+      fill="#FC73BF"
+      r="10"
+      stroke="black" />
+    <line
+      markerEnd="url(#arrow)"
+      style={
+        Object {
+          "stroke": "rgb(0, 0, 0)",
+          "strokeWidth": 1,
+        }
+      }
+      x1={230}
+      x2={350}
+      y1={450}
+      y2={470} />
+    <line
+      markerEnd="url(#arrow)"
+      style={
+        Object {
+          "stroke": "rgb(0, 0, 0)",
+          "strokeWidth": 1,
+        }
+      }
+      x1={230}
+      x2={170}
+      y1={450}
+      y2={500} />
+    <circle
+      cursor="help"
+      cx={230}
+      cy={450}
+      fill="#57C132"
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+      r="10"
+      stroke="black"
+      strokeWidth="2" />
+    <line
+      markerEnd="url(#arrow)"
+      style={
+        Object {
+          "stroke": "rgb(0, 0, 0)",
+          "strokeWidth": 1,
+        }
+      }
+      x1={350}
+      x2={350}
+      y1={470}
+      y2={620} />
+    <circle
+      cursor="help"
+      cx={350}
+      cy={470}
+      fill="#39E4F7"
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+      r="10"
+      stroke="black"
+      strokeWidth="2" />
+    <line
+      markerEnd="url(#arrow)"
+      style={
+        Object {
+          "stroke": "rgb(0, 0, 0)",
+          "strokeWidth": 1,
+        }
+      }
+      x1={110}
+      x2={110}
+      y1={480}
+      y2={520} />
+    <circle
+      cx={110}
+      cy={480}
+      fill="#FC73BF"
+      r="10"
+      stroke="black" />
+    <line
+      markerEnd="url(#arrow)"
+      style={
+        Object {
+          "stroke": "rgb(0, 0, 0)",
+          "strokeWidth": 1,
+        }
+      }
+      x1={170}
+      x2={170}
+      y1={500}
+      y2={550} />
+    <circle
+      cx={170}
+      cy={500}
+      fill="#FEE148"
+      r="10"
+      stroke="black" />
+    <line
+      markerEnd="url(#arrow)"
+      style={
+        Object {
+          "stroke": "rgb(0, 0, 0)",
+          "strokeWidth": 1,
+        }
+      }
+      x1={110}
+      x2={170}
+      y1={520}
+      y2={550} />
+    <circle
+      cx={110}
+      cy={520}
+      fill="#FC73BF"
+      r="10"
+      stroke="black" />
+    <line
+      markerEnd="url(#arrow)"
+      style={
+        Object {
+          "stroke": "rgb(0, 0, 0)",
+          "strokeWidth": 1,
+        }
+      }
+      x1={50}
+      x2={170}
+      y1={530}
+      y2={550} />
+    <circle
+      cx={50}
+      cy={530}
+      fill="#FC73BF"
+      r="10"
+      stroke="black" />
+    <line
+      markerEnd="url(#arrow)"
+      style={
+        Object {
+          "stroke": "rgb(0, 0, 0)",
+          "strokeWidth": 1,
+        }
+      }
+      x1={170}
+      x2={170}
+      y1={550}
+      y2={600} />
+    <line
+      markerEnd="url(#arrow)"
+      style={
+        Object {
+          "stroke": "rgb(0, 0, 0)",
+          "strokeWidth": 1,
+        }
+      }
+      x1={170}
+      x2={230}
+      y1={550}
+      y2={570} />
+    <circle
+      cx={170}
+      cy={550}
+      fill="#FEE148"
+      r="10"
+      stroke="black" />
+    <line
+      markerEnd="url(#arrow)"
+      style={
+        Object {
+          "stroke": "rgb(0, 0, 0)",
+          "strokeWidth": 1,
+        }
+      }
+      x1={230}
+      x2={170}
+      y1={570}
+      y2={600} />
+    <line
+      markerEnd="url(#arrow)"
+      style={
+        Object {
+          "stroke": "rgb(0, 0, 0)",
+          "strokeWidth": 1,
+        }
+      }
+      x1={230}
+      x2={350}
+      y1={570}
+      y2={620} />
+    <circle
+      cx={230}
+      cy={570}
+      fill="#57C132"
+      r="10"
+      stroke="black" />
+    <circle
+      cx={170}
+      cy={600}
+      fill="#FEE148"
+      r="10"
+      stroke="black" />
+    <circle
+      cx={350}
+      cy={620}
+      fill="#39E4F7"
+      r="10"
+      stroke="black" />
+  </svg>
+</div>
+`;
