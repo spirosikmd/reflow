@@ -39,6 +39,7 @@ class Flow extends PureComponent {
       master: {
         master: this.connectMasterToMaster.bind(this),
         develop: this.connectMasterToDevelop.bind(this),
+        hotfix: this.connectMasterToHotfix.bind(this),
       },
       develop: {
         develop: this.connectDevelopToDevelop.bind(this),
@@ -76,7 +77,7 @@ class Flow extends PureComponent {
               cy={cy}
               r="10"
               stroke="black"
-              strokeWidth="2"
+              strokeWidth="3"
               fill={fill}
               cursor="help"
             />
@@ -142,6 +143,10 @@ class Flow extends PureComponent {
     return (
       <line x1={x1} y1={y1} x2={x1} y2={y1 + 650} style={style.timeline} />
     );
+  }
+
+  connectMasterToHotfix(cy1, cy2) {
+    return this.renderConnector(timelines.master, cy1, timelines.hotfix, cy2);
   }
 
   connectDevelopToDevelop(cy1, cy2) {
@@ -253,8 +258,32 @@ class Flow extends PureComponent {
     });
   }
 
+  parseUpdates(objects) {
+    const updates = [];
+    objects.forEach(({ type, y, from, popup, content }) => {
+      const newObject = Object.assign(
+        {},
+        { type, y, connectors: [], popup, content }
+      );
+      updates.push(newObject);
+      if (from) {
+        from.forEach(fromObject => {
+          const currentUpdate = updates.find(
+            update =>
+              update.y === fromObject.y && update.type === fromObject.type
+          );
+          if (!currentUpdate) {
+            return;
+          }
+          currentUpdate.connectors.push({ type, y });
+        });
+      }
+    });
+    return updates;
+  }
+
   render() {
-    const { updates } = this.props;
+    const updates = this.parseUpdates(this.props.updates);
 
     return (
       <div>

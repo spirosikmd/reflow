@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react';
 import Flow from './Flow';
-import updates from './updates';
+import mockUpdates from './__mocks__/updates';
 import { Button, Grid, List } from 'semantic-ui-react';
 
 class App extends PureComponent {
@@ -86,7 +86,7 @@ class App extends PureComponent {
               />
               <Button
                 icon="forward"
-                onClick={() => this.handleForwardClick(this.state, updates)}
+                onClick={() => this.handleForwardClick(this.state, mockUpdates)}
               />
               <Button
                 onClick={() => this.handlerResetClick(this.state)}
