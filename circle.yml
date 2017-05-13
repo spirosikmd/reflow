@@ -2,6 +2,11 @@ machine:
   node:
     version: $(cat $HOME/$CIRCLE_PROJECT_REPONAME/.nvmrc)
 
+general:
+  branches:
+    ignore:
+      - gh-pages
+
 dependencies:
   cache_directories:
     - ~/.cache/yarn

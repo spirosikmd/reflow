@@ -1,5 +1,6 @@
 # reflow
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
+[![CircleCI](https://circleci.com/gh/spirosikmd/reflow.svg?style=svg)](https://circleci.com/gh/spirosikmd/reflow)
 
 Interactive gitflow diagram based on Vincent Driessen's [branching model](http://nvie.com/git-model "original blog post").
 
