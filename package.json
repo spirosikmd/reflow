@@ -2,7 +2,11 @@
   "name": "reflow",
   "version": "0.1.0",
   "private": true,
-  "author": "Spyros Ioakeimidis <spyrosikmd@gmail.com> (http://www.spyros.io)",
+  "author": {
+    "name": "Spyros Ioakeimidis",
+    "email": "<spyrosikmd@gmail.com>",
+    "url": "http://www.spyros.io"
+  },
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -33,8 +37,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "deploy": "gh-pages -d build",
-    "fmt": "prettier --single-quote --trailing-comma es5 --write \"src/**/*.js\"",
+    "deploy": "scripts/deploy.js",
+    "fmt": "prettier --single-quote --trailing-comma es5 --write \"{src,scripts}/**/*.js\"",
     "precommit": "lint-staged",
     "add-contributor": "all-contributors add",
     "generate-contributors": "all-contributors generate",
