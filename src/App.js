@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react';
 import Flow from './Flow';
 import mockUpdates from './__mocks__/updates';
-import { Button, Grid, List } from 'semantic-ui-react';
+import { Button, Grid, List, Select, Input } from 'semantic-ui-react';
 
 class App extends PureComponent {
   constructor(props) {
@@ -9,12 +9,20 @@ class App extends PureComponent {
 
     this.state = {
       updates: [],
+      yToAdd: 50,
+      typeToAdd: 'master',
       step: 0,
+      flowSteps: [[0, 8], [9, 17], [18, 24], [25, 26]],
+    };
+
+    this.actionHandlers = {
+      master: this.addMasterUpdate.bind(this),
+      develop: this.addDevelopUpdate.bind(this),
     };
   }
 
   isTheEnd(state, updates) {
-    return state.step === updates.length;
+    return state.step >= updates.length;
   }
 
   isTheStart(state) {
@@ -25,7 +33,16 @@ class App extends PureComponent {
     if (this.isTheEnd(state, updates)) {
       return;
     }
-    const newUpdates = [...state.updates, updates[state.step]];
+    let newUpdates;
+    if (state.flowSteps) {
+      const steps = state.flowSteps[state.step];
+      if (!steps) {
+        return;
+      }
+      newUpdates = [...state.updates, ...updates.slice(steps[0], steps[1] + 1)];
+    } else {
+      newUpdates = [...state.updates, updates[state.step]];
+    }
     const step = state.step + 1;
     this.setState({ updates: newUpdates, step });
   }
@@ -74,6 +91,83 @@ class App extends PureComponent {
     );
   }
 
+  findLastOfType(state, type) {
+    const updates = state.updates
+      .filter(update => update.type === type)
+      .sort((update1, update2) => update1.y < update2.y);
+    return updates[0];
+  }
+
+  isFirstOfType(state, type) {
+    const updates = state.updates
+      .filter(update => update.type === type)
+      .sort((update1, update2) => update1.y < update2.y);
+    if (!updates || updates.length === 0) {
+      return true;
+    }
+    return state.yToAdd < updates[0].y;
+  }
+
+  findFirstOfType(state, type) {
+    const updates = state.updates
+      .filter(update => update.type === type)
+      .sort((update1, update2) => update1.y < update2.y);
+    return updates[0];
+  }
+
+  addMasterUpdate(state) {
+    let update = { type: state.typeToAdd, y: state.yToAdd };
+    if (this.isFirstOfType(state, 'master')) {
+      const firstMaster = this.findFirstOfType(state, 'master');
+      if (firstMaster) {
+        update = Object.assign({}, update, {
+          to: [{ type: firstMaster.type, y: firstMaster.y }],
+        });
+      }
+    } else {
+      const lastMaster = this.findLastOfType(state, 'master');
+      if (lastMaster) {
+        update = Object.assign({}, update, {
+          from: [{ type: lastMaster.type, y: lastMaster.y }],
+        });
+      }
+    }
+    const updates = [...state.updates, update];
+    this.setState({ updates });
+  }
+
+  addDevelopUpdate(state) {
+    let update = { type: state.typeToAdd, y: state.yToAdd };
+    let from;
+    if (this.isFirstOfType(state, 'develop')) {
+      from = this.findLastOfType(state, 'master');
+    } else {
+      from = this.findLastOfType(state, 'develop');
+    }
+    update = Object.assign({}, update, {
+      from: [{ type: from.type, y: from.y }],
+    });
+    const updates = [...state.updates, update];
+    this.setState({ updates });
+  }
+
+  handleAddClick(state) {
+    const handler = this.actionHandlers[state.typeToAdd];
+    if (!handler) {
+      return;
+    }
+    handler(state);
+  }
+
+  handleInputChange(event) {
+    const y = event.target.value;
+    this.setState({ yToAdd: parseInt(y, 10) || 0 });
+  }
+
+  handleSelectChange(element) {
+    this.setState({ typeToAdd: element.value });
+  }
+
   render() {
     return (
       <div>
@@ -91,6 +185,23 @@ class App extends PureComponent {
               <Button
                 onClick={() => this.handlerResetClick(this.state)}
                 content="reset"
+              />
+              <Select
+                options={[
+                  { value: 'master', text: 'master' },
+                  { value: 'develop', text: 'develop' },
+                ]}
+                onChange={(event, value) => this.handleSelectChange(value)}
+                value={this.state.typeToAdd}
+              />
+              <Input
+                onChange={event => this.handleInputChange(event)}
+                type="number"
+                value={this.state.yToAdd}
+              />
+              <Button
+                icon="add"
+                onClick={() => this.handleAddClick(this.state)}
               />
               <List>
                 {this.state.updates &&

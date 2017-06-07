@@ -1,9 +1,12 @@
-exports[`test App renders 1`] = `
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App renders 1`] = `
 <div>
   <svg
     height="700"
     viewBox="0 0 400 700"
-    width="100%">
+    width="100%"
+  >
     <defs>
       <marker
         id="arrow"
@@ -12,15 +15,18 @@ exports[`test App renders 1`] = `
         markerWidth="10"
         orient="auto"
         refX="18"
-        refY="3">
+        refY="3"
+      >
         <path
           d="M0,0 L0,6 L9,3 z"
-          fill="#000" />
+          fill="#000"
+        />
       </marker>
     </defs>
     <text
       x={60}
-      y="20">
+      y="20"
+    >
       feature
     </text>
     <text
@@ -30,17 +36,20 @@ exports[`test App renders 1`] = `
         }
       }
       x={145}
-      y="20">
+      y="20"
+    >
       develop
     </text>
     <text
       x={210}
-      y="20">
+      y="20"
+    >
       release
     </text>
     <text
       x={265}
-      y="20">
+      y="20"
+    >
       hotfixes
     </text>
     <text
@@ -50,7 +59,8 @@ exports[`test App renders 1`] = `
         }
       }
       x={330}
-      y="20">
+      y="20"
+    >
       master
     </text>
     <line
@@ -63,7 +73,8 @@ exports[`test App renders 1`] = `
       x1={50}
       x2={50}
       y1={30}
-      y2={680} />
+      y2={680}
+    />
     <line
       style={
         Object {
@@ -74,7 +85,8 @@ exports[`test App renders 1`] = `
       x1={110}
       x2={110}
       y1={30}
-      y2={680} />
+      y2={680}
+    />
     <line
       style={
         Object {
@@ -85,7 +97,8 @@ exports[`test App renders 1`] = `
       x1={170}
       x2={170}
       y1={30}
-      y2={680} />
+      y2={680}
+    />
     <line
       style={
         Object {
@@ -96,7 +109,8 @@ exports[`test App renders 1`] = `
       x1={230}
       x2={230}
       y1={30}
-      y2={680} />
+      y2={680}
+    />
     <line
       style={
         Object {
@@ -107,7 +121,8 @@ exports[`test App renders 1`] = `
       x1={290}
       x2={290}
       y1={30}
-      y2={680} />
+      y2={680}
+    />
     <line
       style={
         Object {
@@ -118,7 +133,8 @@ exports[`test App renders 1`] = `
       x1={350}
       x2={350}
       y1={30}
-      y2={680} />
+      y2={680}
+    />
     <line
       markerEnd="url(#arrow)"
       style={
@@ -130,7 +146,8 @@ exports[`test App renders 1`] = `
       x1={350}
       x2={170}
       y1={50}
-      y2={100} />
+      y2={100}
+    />
     <line
       markerEnd="url(#arrow)"
       style={
@@ -142,7 +159,8 @@ exports[`test App renders 1`] = `
       x1={350}
       x2={290}
       y1={50}
-      y2={170} />
+      y2={170}
+    />
     <line
       markerEnd="url(#arrow)"
       style={
@@ -154,7 +172,8 @@ exports[`test App renders 1`] = `
       x1={350}
       x2={350}
       y1={50}
-      y2={220} />
+      y2={220}
+    />
     <circle
       cursor="help"
       cx={350}
@@ -167,7 +186,8 @@ exports[`test App renders 1`] = `
       onMouseLeave={[Function]}
       r="10"
       stroke="black"
-      strokeWidth="3" />
+      strokeWidth="3"
+    />
     <line
       markerEnd="url(#arrow)"
       style={
@@ -179,13 +199,15 @@ exports[`test App renders 1`] = `
       x1={170}
       x2={170}
       y1={100}
-      y2={150} />
+      y2={150}
+    />
     <circle
       cx={170}
       cy={100}
       fill="#FEE148"
       r="10"
-      stroke="black" />
+      stroke="black"
+    />
     <line
       markerEnd="url(#arrow)"
       style={
@@ -197,7 +219,8 @@ exports[`test App renders 1`] = `
       x1={170}
       x2={50}
       y1={150}
-      y2={180} />
+      y2={180}
+    />
     <line
       markerEnd="url(#arrow)"
       style={
@@ -209,7 +232,8 @@ exports[`test App renders 1`] = `
       x1={170}
       x2={110}
       y1={150}
-      y2={190} />
+      y2={190}
+    />
     <line
       markerEnd="url(#arrow)"
       style={
@@ -221,13 +245,15 @@ exports[`test App renders 1`] = `
       x1={170}
       x2={170}
       y1={150}
-      y2={200} />
+      y2={200}
+    />
     <circle
       cx={170}
       cy={150}
       fill="#FEE148"
       r="10"
-      stroke="black" />
+      stroke="black"
+    />
     <line
       markerEnd="url(#arrow)"
       style={
@@ -239,7 +265,8 @@ exports[`test App renders 1`] = `
       x1={50}
       x2={50}
       y1={180}
-      y2={240} />
+      y2={240}
+    />
     <circle
       cursor="help"
       cx={50}
@@ -252,7 +279,68 @@ exports[`test App renders 1`] = `
       onMouseLeave={[Function]}
       r="10"
       stroke="black"
-      strokeWidth="3" />
+      strokeWidth="3"
+    />
+    <line
+      markerEnd="url(#arrow)"
+      style={
+        Object {
+          "stroke": "rgb(0, 0, 0)",
+          "strokeWidth": 1,
+        }
+      }
+      x1={50}
+      x2={50}
+      y1={240}
+      y2={370}
+    />
+    <circle
+      cx={50}
+      cy={240}
+      fill="#FC73BF"
+      r="10"
+      stroke="black"
+    />
+    <line
+      markerEnd="url(#arrow)"
+      style={
+        Object {
+          "stroke": "rgb(0, 0, 0)",
+          "strokeWidth": 1,
+        }
+      }
+      x1={50}
+      x2={50}
+      y1={370}
+      y2={530}
+    />
+    <circle
+      cx={50}
+      cy={370}
+      fill="#FC73BF"
+      r="10"
+      stroke="black"
+    />
+    <line
+      markerEnd="url(#arrow)"
+      style={
+        Object {
+          "stroke": "rgb(0, 0, 0)",
+          "strokeWidth": 1,
+        }
+      }
+      x1={50}
+      x2={170}
+      y1={530}
+      y2={570}
+    />
+    <circle
+      cx={50}
+      cy={530}
+      fill="#FC73BF"
+      r="10"
+      stroke="black"
+    />
     <line
       markerEnd="url(#arrow)"
       style={
@@ -264,7 +352,8 @@ exports[`test App renders 1`] = `
       x1={110}
       x2={110}
       y1={190}
-      y2={225} />
+      y2={225}
+    />
     <circle
       cursor="help"
       cx={110}
@@ -277,7 +366,8 @@ exports[`test App renders 1`] = `
       onMouseLeave={[Function]}
       r="10"
       stroke="black"
-      strokeWidth="3" />
+      strokeWidth="3"
+    />
     <line
       markerEnd="url(#arrow)"
       style={
@@ -286,35 +376,18 @@ exports[`test App renders 1`] = `
           "strokeWidth": 1,
         }
       }
-      x1={290}
+      x1={110}
       x2={170}
-      y1={170}
-      y2={200} />
-    <line
-      markerEnd="url(#arrow)"
-      style={
-        Object {
-          "stroke": "rgb(0, 0, 0)",
-          "strokeWidth": 1,
-        }
-      }
-      x1={290}
-      x2={350}
-      y1={170}
-      y2={220} />
+      y1={225}
+      y2={250}
+    />
     <circle
-      cursor="help"
-      cx={290}
-      cy={170}
-      fill="#FB5B68"
-      onBlur={[Function]}
-      onClick={[Function]}
-      onFocus={[Function]}
-      onMouseEnter={[Function]}
-      onMouseLeave={[Function]}
+      cx={110}
+      cy={225}
+      fill="#FC73BF"
       r="10"
       stroke="black"
-      strokeWidth="3" />
+    />
     <line
       markerEnd="url(#arrow)"
       style={
@@ -326,7 +399,8 @@ exports[`test App renders 1`] = `
       x1={170}
       x2={170}
       y1={200}
-      y2={250} />
+      y2={250}
+    />
     <circle
       cursor="help"
       cx={170}
@@ -339,7 +413,8 @@ exports[`test App renders 1`] = `
       onMouseLeave={[Function]}
       r="10"
       stroke="black"
-      strokeWidth="3" />
+      strokeWidth="3"
+    />
     <line
       markerEnd="url(#arrow)"
       style={
@@ -348,59 +423,11 @@ exports[`test App renders 1`] = `
           "strokeWidth": 1,
         }
       }
-      x1={110}
+      x1={170}
       x2={170}
-      y1={225}
-      y2={250} />
-    <circle
-      cx={110}
-      cy={225}
-      fill="#FC73BF"
-      r="10"
-      stroke="black" />
-    <line
-      markerEnd="url(#arrow)"
-      style={
-        Object {
-          "stroke": "rgb(0, 0, 0)",
-          "strokeWidth": 1,
-        }
-      }
-      x1={350}
-      x2={350}
-      y1={220}
-      y2={470} />
-    <circle
-      cursor="help"
-      cx={350}
-      cy={220}
-      fill="#39E4F7"
-      onBlur={[Function]}
-      onClick={[Function]}
-      onFocus={[Function]}
-      onMouseEnter={[Function]}
-      onMouseLeave={[Function]}
-      r="10"
-      stroke="black"
-      strokeWidth="3" />
-    <line
-      markerEnd="url(#arrow)"
-      style={
-        Object {
-          "stroke": "rgb(0, 0, 0)",
-          "strokeWidth": 1,
-        }
-      }
-      x1={50}
-      x2={50}
-      y1={240}
-      y2={370} />
-    <circle
-      cx={50}
-      cy={240}
-      fill="#FC73BF"
-      r="10"
-      stroke="black" />
+      y1={250}
+      y2={370}
+    />
     <line
       markerEnd="url(#arrow)"
       style={
@@ -412,7 +439,15 @@ exports[`test App renders 1`] = `
       x1={170}
       x2={230}
       y1={250}
-      y2={290} />
+      y2={290}
+    />
+    <circle
+      cx={170}
+      cy={250}
+      fill="#FEE148"
+      r="10"
+      stroke="black"
+    />
     <line
       markerEnd="url(#arrow)"
       style={
@@ -423,14 +458,136 @@ exports[`test App renders 1`] = `
       }
       x1={170}
       x2={170}
-      y1={250}
-      y2={370} />
+      y1={370}
+      y2={500}
+    />
+    <line
+      markerEnd="url(#arrow)"
+      style={
+        Object {
+          "stroke": "rgb(0, 0, 0)",
+          "strokeWidth": 1,
+        }
+      }
+      x1={170}
+      x2={110}
+      y1={370}
+      y2={430}
+    />
     <circle
       cx={170}
-      cy={250}
+      cy={370}
       fill="#FEE148"
       r="10"
-      stroke="black" />
+      stroke="black"
+    />
+    <line
+      markerEnd="url(#arrow)"
+      style={
+        Object {
+          "stroke": "rgb(0, 0, 0)",
+          "strokeWidth": 1,
+        }
+      }
+      x1={170}
+      x2={170}
+      y1={500}
+      y2={570}
+    />
+    <circle
+      cx={170}
+      cy={500}
+      fill="#FEE148"
+      r="10"
+      stroke="black"
+    />
+    <line
+      markerEnd="url(#arrow)"
+      style={
+        Object {
+          "stroke": "rgb(0, 0, 0)",
+          "strokeWidth": 1,
+        }
+      }
+      x1={170}
+      x2={170}
+      y1={570}
+      y2={625}
+    />
+    <line
+      markerEnd="url(#arrow)"
+      style={
+        Object {
+          "stroke": "rgb(0, 0, 0)",
+          "strokeWidth": 1,
+        }
+      }
+      x1={170}
+      x2={230}
+      y1={570}
+      y2={600}
+    />
+    <circle
+      cx={170}
+      cy={570}
+      fill="#FEE148"
+      r="10"
+      stroke="black"
+    />
+    <circle
+      cx={170}
+      cy={625}
+      fill="#FEE148"
+      r="10"
+      stroke="black"
+    />
+    <line
+      markerEnd="url(#arrow)"
+      style={
+        Object {
+          "stroke": "rgb(0, 0, 0)",
+          "strokeWidth": 1,
+        }
+      }
+      x1={110}
+      x2={110}
+      y1={430}
+      y2={480}
+    />
+    <circle
+      cx={110}
+      cy={430}
+      fill="#FC73BF"
+      r="10"
+      stroke="black"
+    />
+    <line
+      markerEnd="url(#arrow)"
+      style={
+        Object {
+          "stroke": "rgb(0, 0, 0)",
+          "strokeWidth": 1,
+        }
+      }
+      x1={110}
+      x2={110}
+      y1={480}
+      y2={520}
+    />
+    <circle
+      cx={110}
+      cy={480}
+      fill="#FC73BF"
+      r="10"
+      stroke="black"
+    />
+    <circle
+      cx={110}
+      cy={520}
+      fill="#FC73BF"
+      r="10"
+      stroke="black"
+    />
     <line
       markerEnd="url(#arrow)"
       style={
@@ -442,7 +599,8 @@ exports[`test App renders 1`] = `
       x1={230}
       x2={230}
       y1={290}
-      y2={340} />
+      y2={340}
+    />
     <circle
       cursor="help"
       cx={230}
@@ -455,19 +613,8 @@ exports[`test App renders 1`] = `
       onMouseLeave={[Function]}
       r="10"
       stroke="black"
-      strokeWidth="3" />
-    <line
-      markerEnd="url(#arrow)"
-      style={
-        Object {
-          "stroke": "rgb(0, 0, 0)",
-          "strokeWidth": 1,
-        }
-      }
-      x1={230}
-      x2={170}
-      y1={340}
-      y2={370} />
+      strokeWidth="3"
+    />
     <line
       markerEnd="url(#arrow)"
       style={
@@ -479,61 +626,15 @@ exports[`test App renders 1`] = `
       x1={230}
       x2={230}
       y1={340}
-      y2={395} />
+      y2={395}
+    />
     <circle
       cx={230}
       cy={340}
       fill="#57C132"
       r="10"
-      stroke="black" />
-    <line
-      markerEnd="url(#arrow)"
-      style={
-        Object {
-          "stroke": "rgb(0, 0, 0)",
-          "strokeWidth": 1,
-        }
-      }
-      x1={50}
-      x2={50}
-      y1={370}
-      y2={530} />
-    <circle
-      cx={50}
-      cy={370}
-      fill="#FC73BF"
-      r="10"
-      stroke="black" />
-    <line
-      markerEnd="url(#arrow)"
-      style={
-        Object {
-          "stroke": "rgb(0, 0, 0)",
-          "strokeWidth": 1,
-        }
-      }
-      x1={170}
-      x2={110}
-      y1={370}
-      y2={430} />
-    <line
-      markerEnd="url(#arrow)"
-      style={
-        Object {
-          "stroke": "rgb(0, 0, 0)",
-          "strokeWidth": 1,
-        }
-      }
-      x1={170}
-      x2={170}
-      y1={370}
-      y2={500} />
-    <circle
-      cx={170}
-      cy={370}
-      fill="#FEE148"
-      r="10"
-      stroke="black" />
+      stroke="black"
+    />
     <line
       markerEnd="url(#arrow)"
       style={
@@ -545,7 +646,8 @@ exports[`test App renders 1`] = `
       x1={230}
       x2={230}
       y1={395}
-      y2={450} />
+      y2={450}
+    />
     <circle
       cursor="help"
       cx={230}
@@ -558,25 +660,8 @@ exports[`test App renders 1`] = `
       onMouseLeave={[Function]}
       r="10"
       stroke="black"
-      strokeWidth="3" />
-    <line
-      markerEnd="url(#arrow)"
-      style={
-        Object {
-          "stroke": "rgb(0, 0, 0)",
-          "strokeWidth": 1,
-        }
-      }
-      x1={110}
-      x2={110}
-      y1={430}
-      y2={480} />
-    <circle
-      cx={110}
-      cy={430}
-      fill="#FC73BF"
-      r="10"
-      stroke="black" />
+      strokeWidth="3"
+    />
     <line
       markerEnd="url(#arrow)"
       style={
@@ -588,19 +673,8 @@ exports[`test App renders 1`] = `
       x1={230}
       x2={350}
       y1={450}
-      y2={470} />
-    <line
-      markerEnd="url(#arrow)"
-      style={
-        Object {
-          "stroke": "rgb(0, 0, 0)",
-          "strokeWidth": 1,
-        }
-      }
-      x1={230}
-      x2={170}
-      y1={450}
-      y2={500} />
+      y2={470}
+    />
     <circle
       cursor="help"
       cx={230}
@@ -613,7 +687,28 @@ exports[`test App renders 1`] = `
       onMouseLeave={[Function]}
       r="10"
       stroke="black"
-      strokeWidth="3" />
+      strokeWidth="3"
+    />
+    <line
+      markerEnd="url(#arrow)"
+      style={
+        Object {
+          "stroke": "rgb(0, 0, 0)",
+          "strokeWidth": 1,
+        }
+      }
+      x1={230}
+      x2={350}
+      y1={600}
+      y2={650}
+    />
+    <circle
+      cx={230}
+      cy={600}
+      fill="#57C132"
+      r="10"
+      stroke="black"
+    />
     <line
       markerEnd="url(#arrow)"
       style={
@@ -625,7 +720,8 @@ exports[`test App renders 1`] = `
       x1={350}
       x2={350}
       y1={470}
-      y2={650} />
+      y2={650}
+    />
     <circle
       cursor="help"
       cx={350}
@@ -638,151 +734,56 @@ exports[`test App renders 1`] = `
       onMouseLeave={[Function]}
       r="10"
       stroke="black"
-      strokeWidth="3" />
-    <line
-      markerEnd="url(#arrow)"
-      style={
-        Object {
-          "stroke": "rgb(0, 0, 0)",
-          "strokeWidth": 1,
-        }
-      }
-      x1={110}
-      x2={110}
-      y1={480}
-      y2={520} />
-    <circle
-      cx={110}
-      cy={480}
-      fill="#FC73BF"
-      r="10"
-      stroke="black" />
-    <line
-      markerEnd="url(#arrow)"
-      style={
-        Object {
-          "stroke": "rgb(0, 0, 0)",
-          "strokeWidth": 1,
-        }
-      }
-      x1={170}
-      x2={170}
-      y1={500}
-      y2={570} />
-    <circle
-      cx={170}
-      cy={500}
-      fill="#FEE148"
-      r="10"
-      stroke="black" />
-    <line
-      markerEnd="url(#arrow)"
-      style={
-        Object {
-          "stroke": "rgb(0, 0, 0)",
-          "strokeWidth": 1,
-        }
-      }
-      x1={110}
-      x2={170}
-      y1={520}
-      y2={570} />
-    <circle
-      cx={110}
-      cy={520}
-      fill="#FC73BF"
-      r="10"
-      stroke="black" />
-    <line
-      markerEnd="url(#arrow)"
-      style={
-        Object {
-          "stroke": "rgb(0, 0, 0)",
-          "strokeWidth": 1,
-        }
-      }
-      x1={50}
-      x2={170}
-      y1={530}
-      y2={570} />
-    <circle
-      cx={50}
-      cy={530}
-      fill="#FC73BF"
-      r="10"
-      stroke="black" />
-    <line
-      markerEnd="url(#arrow)"
-      style={
-        Object {
-          "stroke": "rgb(0, 0, 0)",
-          "strokeWidth": 1,
-        }
-      }
-      x1={170}
-      x2={230}
-      y1={570}
-      y2={600} />
-    <line
-      markerEnd="url(#arrow)"
-      style={
-        Object {
-          "stroke": "rgb(0, 0, 0)",
-          "strokeWidth": 1,
-        }
-      }
-      x1={170}
-      x2={170}
-      y1={570}
-      y2={625} />
-    <circle
-      cx={170}
-      cy={570}
-      fill="#FEE148"
-      r="10"
-      stroke="black" />
-    <line
-      markerEnd="url(#arrow)"
-      style={
-        Object {
-          "stroke": "rgb(0, 0, 0)",
-          "strokeWidth": 1,
-        }
-      }
-      x1={230}
-      x2={170}
-      y1={600}
-      y2={625} />
-    <line
-      markerEnd="url(#arrow)"
-      style={
-        Object {
-          "stroke": "rgb(0, 0, 0)",
-          "strokeWidth": 1,
-        }
-      }
-      x1={230}
-      x2={350}
-      y1={600}
-      y2={650} />
-    <circle
-      cx={230}
-      cy={600}
-      fill="#57C132"
-      r="10"
-      stroke="black" />
-    <circle
-      cx={170}
-      cy={625}
-      fill="#FEE148"
-      r="10"
-      stroke="black" />
+      strokeWidth="3"
+    />
     <circle
       cx={350}
       cy={650}
       fill="#39E4F7"
       r="10"
-      stroke="black" />
+      stroke="black"
+    />
+    <line
+      markerEnd="url(#arrow)"
+      style={
+        Object {
+          "stroke": "rgb(0, 0, 0)",
+          "strokeWidth": 1,
+        }
+      }
+      x1={290}
+      x2={350}
+      y1={170}
+      y2={220}
+    />
+    <circle
+      cursor="help"
+      cx={290}
+      cy={170}
+      fill="#FB5B68"
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+      r="10"
+      stroke="black"
+      strokeWidth="3"
+    />
+    <circle
+      cursor="help"
+      cx={350}
+      cy={220}
+      fill="#39E4F7"
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+      r="10"
+      stroke="black"
+      strokeWidth="3"
+    />
   </svg>
 </div>
 `;

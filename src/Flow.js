@@ -52,7 +52,7 @@ class Flow extends PureComponent {
         master: this.connectHotfixToMaster.bind(this),
       },
       release: {
-        release: this.connectRelaseToRelease.bind(this),
+        release: this.connectReleaseToRelease.bind(this),
         develop: this.connectReleaseToDevelop.bind(this),
         master: this.connectReleaseToMaster.bind(this),
       },
@@ -169,7 +169,7 @@ class Flow extends PureComponent {
     return this.renderConnector(timelines.develop, cy1, timelines.release, cy2);
   }
 
-  connectRelaseToRelease(cy1, cy2) {
+  connectReleaseToRelease(cy1, cy2) {
     return this.renderConnector(timelines.release, cy1, timelines.release, cy2);
   }
 
@@ -258,17 +258,17 @@ class Flow extends PureComponent {
     });
   }
 
-  parseUpdates(objects) {
-    const updates = [];
-    objects.forEach(({ type, y, from, popup, content }) => {
+  parseUpdates(updates) {
+    const parsedUpdates = [];
+    updates.forEach(({ type, y, from, popup, content }) => {
       const newObject = Object.assign(
         {},
         { type, y, connectors: [], popup, content }
       );
-      updates.push(newObject);
+      parsedUpdates.push(newObject);
       if (from) {
         from.forEach(fromObject => {
-          const currentUpdate = updates.find(
+          const currentUpdate = parsedUpdates.find(
             update =>
               update.y === fromObject.y && update.type === fromObject.type
           );
@@ -279,7 +279,7 @@ class Flow extends PureComponent {
         });
       }
     });
-    return updates;
+    return parsedUpdates;
   }
 
   render() {

@@ -1,46 +1,166 @@
-exports[`test App renders 1`] = `
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App renders 1`] = `
 <div>
   <div
-    className="ui grid">
+    className="ui grid"
+  >
     <div
-      className="row">
+      className="row"
+    >
       <div
-        className="five wide column">
+        className="five wide column"
+      >
         <button
           className="ui icon button"
           onClick={[Function]}
-          tabIndex={undefined}>
+          tabIndex={undefined}
+        >
           <i
             aria-hidden="true"
-            className="backward icon" />
+            className="backward icon"
+          />
            
         </button>
         <button
           className="ui icon button"
           onClick={[Function]}
-          tabIndex={undefined}>
+          tabIndex={undefined}
+        >
           <i
             aria-hidden="true"
-            className="forward icon" />
+            className="forward icon"
+          />
            
         </button>
         <button
           className="ui button"
           onClick={[Function]}
-          tabIndex={undefined}>
+          tabIndex={undefined}
+        >
           reset
         </button>
         <div
+          aria-busy={undefined}
+          aria-disabled={undefined}
+          aria-expanded={false}
+          aria-multiselectable={undefined}
+          className="ui selection dropdown"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseDown={[Function]}
+          role="listbox"
+          tabIndex={0}
+        >
+          <select
+            aria-hidden="true"
+            multiple={undefined}
+            name={undefined}
+            type="hidden"
+            value="master"
+          >
+            <option
+              value=""
+            />
+            <option
+              value="master"
+            >
+              master
+            </option>
+            <option
+              value="develop"
+            >
+              develop
+            </option>
+          </select>
+          <div
+            className="text"
+          >
+            master
+          </div>
+          <i
+            aria-hidden="true"
+            className="dropdown icon"
+          />
+          <div
+            className="menu transition"
+          >
+            <div
+              aria-checked={true}
+              aria-disabled={undefined}
+              aria-selected={true}
+              className="active selected item"
+              onClick={[Function]}
+              role="option"
+              style={
+                Object {
+                  "pointerEvents": "all",
+                }
+              }
+            >
+              <span
+                className="text"
+              >
+                master
+              </span>
+            </div>
+            <div
+              aria-checked={false}
+              aria-disabled={undefined}
+              aria-selected={false}
+              className="item"
+              onClick={[Function]}
+              role="option"
+              style={
+                Object {
+                  "pointerEvents": "all",
+                }
+              }
+            >
+              <span
+                className="text"
+              >
+                develop
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          className="ui input"
+        >
+          <input
+            onChange={[Function]}
+            type="number"
+            value={50}
+          />
+        </div>
+        <button
+          className="ui icon button"
+          onClick={[Function]}
+          tabIndex={undefined}
+        >
+          <i
+            aria-hidden="true"
+            className="add icon"
+          />
+           
+        </button>
+        <div
           className="ui list"
-          role="list" />
+          role="list"
+        />
       </div>
       <div
-        className="center aligned eleven wide column">
+        className="center aligned eleven wide column"
+      >
         <div>
           <svg
             height="700"
             viewBox="0 0 400 700"
-            width="100%">
+            width="100%"
+          >
             <defs>
               <marker
                 id="arrow"
@@ -49,15 +169,18 @@ exports[`test App renders 1`] = `
                 markerWidth="10"
                 orient="auto"
                 refX="18"
-                refY="3">
+                refY="3"
+              >
                 <path
                   d="M0,0 L0,6 L9,3 z"
-                  fill="#000" />
+                  fill="#000"
+                />
               </marker>
             </defs>
             <text
               x={60}
-              y="20">
+              y="20"
+            >
               feature
             </text>
             <text
@@ -67,17 +190,20 @@ exports[`test App renders 1`] = `
                 }
               }
               x={145}
-              y="20">
+              y="20"
+            >
               develop
             </text>
             <text
               x={210}
-              y="20">
+              y="20"
+            >
               release
             </text>
             <text
               x={265}
-              y="20">
+              y="20"
+            >
               hotfixes
             </text>
             <text
@@ -87,7 +213,8 @@ exports[`test App renders 1`] = `
                 }
               }
               x={330}
-              y="20">
+              y="20"
+            >
               master
             </text>
             <line
@@ -100,7 +227,8 @@ exports[`test App renders 1`] = `
               x1={50}
               x2={50}
               y1={30}
-              y2={680} />
+              y2={680}
+            />
             <line
               style={
                 Object {
@@ -111,7 +239,8 @@ exports[`test App renders 1`] = `
               x1={110}
               x2={110}
               y1={30}
-              y2={680} />
+              y2={680}
+            />
             <line
               style={
                 Object {
@@ -122,7 +251,8 @@ exports[`test App renders 1`] = `
               x1={170}
               x2={170}
               y1={30}
-              y2={680} />
+              y2={680}
+            />
             <line
               style={
                 Object {
@@ -133,7 +263,8 @@ exports[`test App renders 1`] = `
               x1={230}
               x2={230}
               y1={30}
-              y2={680} />
+              y2={680}
+            />
             <line
               style={
                 Object {
@@ -144,7 +275,8 @@ exports[`test App renders 1`] = `
               x1={290}
               x2={290}
               y1={30}
-              y2={680} />
+              y2={680}
+            />
             <line
               style={
                 Object {
@@ -155,7 +287,8 @@ exports[`test App renders 1`] = `
               x1={350}
               x2={350}
               y1={30}
-              y2={680} />
+              y2={680}
+            />
           </svg>
         </div>
       </div>
