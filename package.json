@@ -17,8 +17,8 @@
   },
   "homepage": "http://www.spyros.io/reflow/",
   "dependencies": {
-    "react": "^15.5.4",
-    "react-dom": "^15.5.4",
+    "react": "^15.6.2",
+    "react-dom": "^15.6.2",
     "semantic-ui-react": "^0.68.5"
   },
   "devDependencies": {
@@ -30,7 +30,7 @@
     "lint-staged": "^3.6.1",
     "prettier": "^1.4.2",
     "react-scripts": "^1.0.7",
-    "react-test-renderer": "^15.5.4"
+    "react-test-renderer": "^15.6.2"
   },
   "scripts": {
     "start": "react-scripts start",
