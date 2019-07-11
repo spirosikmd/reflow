@@ -22,7 +22,7 @@
     "semantic-ui-react": "^0.68.5"
   },
   "devDependencies": {
-    "all-contributors-cli": "^4.3.0",
+    "all-contributors-cli": "^4.11.2",
     "commitizen": "^2.9.6",
     "cz-conventional-changelog": "^2.0.0",
     "gh-pages": "^1.0.0",
